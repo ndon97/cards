@@ -8,8 +8,14 @@ defmodule CardsTest do
   end
 
   test "shuffling a deck randomizes it" do
-    deck = Crads.create_deck
+    deck = Cards.create_deck
     assert deck != Cards.shuffle(deck)
   end
+
+  test "ensuring that card can found to be contained in a deck" do
+    deck = Cards.create_deck()
+    assert Cards.contains?(deck, "Ace of Spades") == true
+  end
+
 
 end
