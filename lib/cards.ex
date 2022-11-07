@@ -69,4 +69,6 @@ defmodule Cards do
       |> Cards.deal(hand_size)
   end
 
+  #test
+
 end
